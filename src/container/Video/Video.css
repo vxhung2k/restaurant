@@ -1,0 +1,16 @@
+video {
+    width: auto;
+    max-width: 50%;
+}
+
+.showvideo {
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+    video {
+        max-width: 70%;
+    }
+}

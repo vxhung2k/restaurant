@@ -1,0 +1,17 @@
+.subheading {
+    display: grid;
+    gap: 2rem;
+    height: fit-content;
+}
+
+@media screen and (max-width:1200px) {
+    .subheading {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .subheading {
+        gap: 0.4rem;
+    }
+}

@@ -1,0 +1,80 @@
+.nav__header {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    height: fit-content;
+}
+
+.logo img {
+    aspect-ratio: 1/1;
+    width: 4rem;
+}
+
+.tag__menu {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    font-size: 25px;
+    color: white;
+}
+
+.icons {
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .nav__header {
+        padding: 0.5rem 1rem;
+    }
+    .logo img {
+        width: 3rem;
+    }
+    .tag__menu {
+        font-size: 20px;
+        gap: 1rem;
+        text-align: center;
+    }
+    .login__booktable {
+        font-size: 20px;
+        gap: 0rem;
+        text-align: center;
+    }
+    .text-name {
+        font-size: 30px;
+        margin-left: 1rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .nav__header {
+        padding: 0.3rem;
+    }
+    .logo img {
+        width: 3rem;
+    }
+    .tag__menu {
+        display: none;
+    }
+    .tag__menu__showbar {
+        font-size: 20px;
+        display: grid;
+        gap: 1rem;
+        position: absolute;
+        right: 0;
+        top: 3.5rem;
+        list-style: none;
+        background: black;
+        padding: 0 1rem;
+        border: 1.5px solid red;
+    }
+    .icons {
+        display: inline-block;
+    }
+}

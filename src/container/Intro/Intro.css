@@ -1,0 +1,25 @@
+.intro {
+    width: 100%;
+}
+
+.intro__container {
+    margin-top: 8%;
+    gap: 2rem;
+    display: grid;
+}
+
+@media screen and (max-width:1024px) {
+    .intro__container {
+        margin-top: 15%;
+        width: 96%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .intro__container {
+        margin-top: 15%;
+        width: 96%;
+        left: 2%;
+    }
+}

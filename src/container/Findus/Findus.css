@@ -1,0 +1,53 @@
+.find__us {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.find__us__content {
+    display: grid;
+    gap: 2rem;
+    height: fit-content;
+}
+
+.find__us__content__head,
+.find__us__content__address {
+    display: grid;
+    gap: 1rem;
+}
+
+.find__us__img img {
+    max-width: 80%;
+    width: auto;
+    object-fit: cover;
+    display: block;
+}
+
+@media screen and (max-width:1200px) {
+    .find__us {
+        width: 98%;
+        gap: 1rem;
+    }
+    .find__us__content {
+        gap: 1rem;
+    }
+    .find__us__content__head,
+    .find__us__content__address {
+        gap: 0.5rem;
+    }
+    .find__us__img img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .find__us {
+        width: 80%;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        align-items: center;
+    }
+}

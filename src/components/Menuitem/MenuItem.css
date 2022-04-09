@@ -1,0 +1,30 @@
+.menu__items {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.solid {
+    content: "";
+    width: 4rem;
+    height: 1px;
+    background: var(--color-golden);
+}
+
+@media screen and (max-width:1024px) {
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    h2 {
+        font-size: 20px;
+    }
+    .solid {
+        width: 1rem;
+    }
+    .menu__items {
+        gap: 0.5rem;
+    }
+}

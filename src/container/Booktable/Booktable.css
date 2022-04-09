@@ -1,0 +1,61 @@
+    .booktable__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin-top: 8rem;
+        height: 60vh;
+    }
+    
+    select {
+        height: 25px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    
+    .booktable {
+        height: fit-content;
+    }
+    
+    .form__booktable {
+        display: grid;
+        gap: 1rem;
+        border: 1.5px solid var(--color-golden);
+        width: fit-content;
+        padding: 1rem 4rem;
+    }
+    
+    label {
+        gap: 2rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    @media screen and (max-width:1200px) {
+        .footer__booktable {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .form__booktable {
+            padding: 1rem 0.5rem;
+            justify-items: start;
+        }
+        label {
+            gap: 0.3rem;
+        }
+        .booktable__container {
+            margin-top: 4rem;
+        }
+        input[type="submit"] {
+            margin-left: 40%;
+        }
+        .footer__booktable {
+            position: none;
+        }
+        .footer__booktable {
+            top: 70vh;
+        }
+    }

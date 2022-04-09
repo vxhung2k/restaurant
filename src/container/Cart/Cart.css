@@ -1,0 +1,45 @@
+.cart {
+    position: absolute;
+    right: 0;
+    top: 6rem;
+    border: 1.5px solid var(--color--golden);
+    background: black;
+    padding: 1rem 2rem;
+    overflow-y: scroll;
+    height: fit-content;
+    max-height: 60vh;
+}
+
+.table__cart td img {
+    width: 5rem;
+    height: 5rem;
+}
+
+tr {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.btx {
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and(max-width:1200px) {}
+
+@media screen and (max-width:600px) {
+    .cart {
+        top: 3.5rem;
+    }
+    .table__cart td img {
+        width: 4rem;
+        height: 4rem;
+    }
+    tr {
+        gap: 0.8rem;
+    }
+    .btx {
+        gap: 0.5rem;
+    }
+}

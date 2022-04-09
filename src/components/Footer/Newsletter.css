@@ -1,0 +1,50 @@
+.newletter {
+    width: 40%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    background: black;
+    text-align: center;
+    border: 1.5px solid red;
+    padding: 1rem 0;
+}
+
+.form__newletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input {
+    font-size: 20px;
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    background: rgba(0, 0, 0, 0.5);
+    height: fit-content;
+}
+
+textarea {
+    font-size: 20px;
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    width: fit-content;
+}
+
+@media screen and (max-width:1200px) {
+    .newletter {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .newletter {
+        width: 90%;
+    }
+    .form__newletter {
+        display: grid;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+}
